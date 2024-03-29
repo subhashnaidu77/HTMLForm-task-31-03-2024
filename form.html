@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <style>
+    input[type= 'checkbox,text,submit,file']{
+        text-align: center;
+    }
+    h2{
+        align-items: center;
+    }
+  </style>
+</head>
+<body style="text-align: center;background-color: #CCFF66">
+
+<div>
+  <h2 style="text-align: center; color: red;">Personal Details</h2>
+  <form  style="display: inline-block; text-align: left;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" "><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" ><br><br>
+    
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" ><br><br>
+    
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <label for="contact">Contact#:</label>
+    <input type="text" id="contact" name="contact"><br><br>
+
+    <h2 style="text-align: center;color: red;">Education Qualification</h2>
+    <label for="degree">Degree:</label>
+    <select id="degree">
+        <option >--Select option--</option>
+      <option value="bachelor">Bachelor's</option>
+      <option value="master">Master's</option>
+      <option value="phd">Ph.D.</option>
+    </select><br><br>
+
+    <label for="engineering">Engineering:</label>
+    <select id="engineering" name="engineering">
+        <option >--Select option--</option>
+      <option >Civil Engineering</option>
+      <option >Electrical Engineering</option>
+      <option >Mechanical Engineering</option>
+    </select><br><br>
+
+    <label for="hobbies">Hobbies:</label>
+    <input type="checkbox" id="hobby1" name="hobbies">
+    <label for="hobby1"> Playing chess</label>
+    <input type="checkbox" id="hobby2" name="hobbies">
+    <label for="hobby2">Reading Books</label><br><br>
+
+  
+    <div style="text-align: center;color: red;">
+      <label for="address"><h2>Address</h2></label><br>
+      <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+    </div>
+
+    <label for="resume">Attach Resume:</label>
+    <input type="file" id="resume"><br><br>
+
+    <input type="submit" value="submit 	&rarr;" " style="background-color: orange;">
+  </form>
+</div>
+
+</body>
+</html>
